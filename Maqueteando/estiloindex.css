@@ -14,34 +14,96 @@
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-flow: column nowrap;
+   
 }            
             
     .menu{
         background-color: thistle;
-        display: flex;        
+        display: flex;    
+        height: 100px;    
+        align-items: center;
     }
         .logo{
             background-color: rgb(62, 34, 139);
             flex: 1 1 auto;
+            height: 30px;
         }
         .barranavegacion{
             background-color: rgb(33, 33, 145);
             flex: 5 1 auto;
+            height: 30px;
         }
         .redes{
             background-color: rgb(33, 33, 145);
             flex: 1 1 auto;
+            height: 30px;
         }
 
     .texto{background-color: brown;}
         h1{background-color: yellow;}
 
-.section{background-color: rgb(0, 0, 0);}
-    .cuerpo{background-color: teal;}
-        .articulo{background-color:tomato;}
+.section{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+}
+    .cuerpo{
+        background-color: teal;
+        flex: 3 1 auto;
+        display: flex;
+        flex-flow: wrap row ;
+    }
+        .articulo{
+            background-color:tomato;
+            flex: 1 1 40%;    
+        }
+        .navegacion{
+            background-color: blue;
+            flex: 1 1 100%;
+        }
          
-    .aside{background-color: thistle;}
-        .publicidad{background-color: honeydew;}
+    .aside{
+        background-color: thistle;
+        flex: 1 1 auto;
+    }
+        .publicidad{
+            background-color: honeydew;
+        }
 
-.piepagina{background-color: rgb(0, 0, 0);}
-    .subpiepagina{background-color: indianred;}
+.piepagina{
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    justify-content: center;
+}
+    .subpiepagina{
+        background-color: indianred;
+        width: 300px;
+        
+    }
+
+@media all and (max-width:800px) {
+    .section{
+        flex-direction: column;        
+    }        
+    .menu{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:600px) {
+    .articulo{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:400px) {
+    .aside{
+        flex-direction: column;
+    }
+}
