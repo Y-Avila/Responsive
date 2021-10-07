@@ -1,0 +1,34 @@
+.Contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.header,.articulo,.izquierda,.derecha,.piepagina{
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding:10px;
+}
+
+.header{
+    background-color: brown;
+}
+
+.articulo{background-color: cadetblue;}
+.izquierda{background-color: coral;}
+.piepagina{background-color:darkgreen;}
+.derecha{background-color: yellowgreen;}
+
+@media all and (min-width:600px){
+    .barraslaterales{flex:1 1 auto}
+}
+
+@media all and (min-width:800px){
+    .articulo{flex:2 0 }
+    .izquierda{order: 1;}
+    .articulo{order: 2;}
+    .derecha{order: 3;}
+    .piepagina{order: 4;}
+}
