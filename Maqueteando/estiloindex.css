@@ -22,24 +22,28 @@
 }            
             
     .menu{
-        background-color: thistle;
+        background:rgb(0, 0, 0,0.1);
         display: flex;        
     }
         .logo{
-            background-color: rgb(62, 34, 139);
+            
             flex: 1 auto auto;
         }
+
+            .logo a{
+                color: yellow;
+            }
             img{
                 width:  20%;
             }
 
         .barranavegacion{
-            background-color: rgb(33, 33, 145);
+            
             flex: 5 auto auto;
             text-decoration: none;
         }
         .redes{
-            background-color: rgb(33, 33, 145);
+            
             flex: 1 1 auto;
         }
 
